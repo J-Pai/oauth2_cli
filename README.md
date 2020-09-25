@@ -6,6 +6,8 @@ From a GCP project's console ([credentials page](https://console.cloud.google.co
 create an OAuth2 Client ID and download the client secret JSON to a secure location.
 
 ```bash
+sudo apt install python3 python3-dev python3-pip python3-venv
+
 cd scripts/oauth2_cli
 mkdir -p cmake/build
 cd cmake/build

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(OAuth2CLI VERSION 0.1)
+project(OAuth2CLI VERSION 0.1.1)
 
 find_package(Python3 REQUIRED)
 
