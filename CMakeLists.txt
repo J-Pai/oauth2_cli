@@ -30,11 +30,6 @@ add_custom_target(oauth2_cli_target
   ALL
   DEPENDS oauth2_cli)
 
-add_custom_target(run
-  COMMAND ${CMAKE_CURRENT_BINARY_DIR}/venv/bin/python ${CMAKE_CURRENT_SOURCE_DIR}/oauth2_cli.py
-  DEPENDS oauth2_cli_target
-  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
-
 install(
   PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/oauth2_cli
   DESTINATION bin)
