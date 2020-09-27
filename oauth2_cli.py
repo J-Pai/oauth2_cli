@@ -4,6 +4,7 @@ import google.oauth2.credentials
 import google_auth_oauthlib.flow
 
 import flask
+import json
 import logging
 import os
 import requests
@@ -105,7 +106,7 @@ if __name__ == '__main__':
         credentials = flow.credentials
         credentials_json = credentials_to_dict(credentials)
         print("CREDENTIALS_START")
-        print(credentials_json)
+        print(json.dumps(credentials_json))
         print("CREDENTIALS_END")
     else:
         Timer(1, open_browser).start()
