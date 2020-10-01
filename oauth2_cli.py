@@ -60,7 +60,7 @@ def oauth2():
     if shutdown is None:
         raise RuntimeError('Not running with the Werkzeug Server')
     print("CREDENTIALS_START")
-    print(flask.session['credentials'])
+    print(json.dumps(flask.session['credentials']))
     print("CREDENTIALS_END")
     shutdown()
     return flask.redirect('https://www.google.com')
